@@ -69,13 +69,79 @@ svg {
 }
 
 .header {
-    position: relative;
     box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px 50px 10px 30px;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 15px;
 }
+
+.search-bar-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#search-bar {
+    background-color: #e0e0e0;
+    width: 40vw;
+    height: 1.8rem;
+    border-radius: 15px;
+}
+
+.header > .row1 {
+    display: flex;
+    gap: 180px;
+}
+
+.profile-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header > .row2 {
+    display: flex;
+    gap: 280px;
+    align-items: center;
+}
+
+.welcome-container {
+    display: flex;
+    width: 30vw;
+    gap: 15px;
+}
+
+.welcome-container > svg#cat {
+    width: 3.8rem;
+    height: auto;
+}
+
+.welcome-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    box-shadow: none;
+}
+
+.buttons-container > div {
+    background-color: #3b82f6;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+}
+
 
 .content {
     background-color: #e0e0e0;
-    display: flex; /* TODO Make it a grid instead */
+    display: flex;
     padding: 30px 15px 40px 15px;
     column-gap: 20px;
 }
@@ -173,7 +239,8 @@ svg {
     color:#5e5e5e;
 }
 
-.trending-container svg {
+.trending-container svg,
+#cat {
     width: 2.5rem;
     height: 2.5rem;
     border: 2px solid black;
@@ -185,13 +252,20 @@ svg {
 
 #emoji-tongue {
     fill: gold;
+    background-color: royalblue;
 }
 
 #cat {
     fill: grey;
+    background-color: orange;
 }
 
 #paw {
     fill: brown;
+    background-color: lightsalmon;
+}
+
+#bat {
+    background-color: lightgrey;
 }
 
