@@ -132,6 +132,10 @@ svg {
     gap: 15px;
 }
 
+.sidebar h2 {
+    margin-bottom: -30px;
+}
+
 .trending-item {
     display: flex;
     gap: 10px;
