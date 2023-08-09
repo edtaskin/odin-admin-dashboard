@@ -32,7 +32,7 @@ svg {
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 90px;
 }
 
 .options1,
@@ -44,12 +44,23 @@ svg {
     gap: 20px;
 }
 
+.dashboard,
 .options1 > div,
 .options2 > div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+}
+
+.dashboard {
+    font-size: 1.7rem;
+    font-weight: 900;
+    gap: 10px;
+}
+
+.options-sidebar .dashboard > svg {
+    width: 3.5rem;
 }
 
 .main {
@@ -65,13 +76,15 @@ svg {
 .content {
     background-color: #e0e0e0;
     display: flex; /* TODO Make it a grid instead */
+    padding: 30px 15px 20px 15px;
+    column-gap: 20px;
 }
 
 .card-container {
     height: 100%;
     width: 70%;
     display: grid;
-    padding: 30px 15px;
+
     gap: 15px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -83,6 +96,10 @@ svg {
     border-radius: 5px;
     box-shadow: var(--small-box-shadow);
     display: grid;
+}
+
+.card > p {
+    color:#5e5e5e;
 }
 
 .actions {
@@ -99,9 +116,57 @@ svg {
     gap: 40px;
 }
 
+.announcements-container > h2,
+.trending-container > h2 {
+    margin-bottom: 10px;
+}
+
 .announcements-container,
 .trending-container {
     background-color: white;
     border-radius: 5px;
+    padding: 20px;
+    box-shadow: var(--small-box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
+
+.trending-item {
+    display: flex;
+    gap: 10px;
+}
+
+.trending-user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trending-user > .username {
+    font-weight: 600;
+}
+
+.trending-container svg {
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 2px solid black;
+    border-top-left-radius: 50% 50%; 
+    border-top-right-radius: 50% 50%; 
+    border-bottom-right-radius: 50% 50%; 
+    border-bottom-left-radius: 50% 50%;
+}
+
+#emoji-tongue {
+    fill: gold;
+}
+
+#cat {
+    fill: grey;
+}
+
+#paw {
+    fill: brown;
+}
+
 
